@@ -256,7 +256,16 @@
       </div>
     </div>
   </section>
+        <?php
+        // the message
+        $msg = "First line of text\nSecond line of text";
+        
+        // use wordwrap() if lines are longer than 70 characters
+        $msg = wordwrap($msg,70);
 
+        // send email
+        mail("brandon92@hotmail.sg","testing",$msg);
+        ?>
   <!-- Contact form-->
   <section class="call-to-action text-white text-center">
     <div class="overlay"></div>

@@ -31,7 +31,7 @@ $configurationSet = 'ConfigSet';
 // If you're using Amazon SES in a region other than US West (Oregon),
 // replace email-smtp.us-west-2.amazonaws.com with the Amazon SES SMTP
 // endpoint in the appropriate region.
-$host = 'email.us-east-1.amazonaws.com';
+$host = 'smtp.gmail.com';
 $port = 587;
 
 // The subject line of the email

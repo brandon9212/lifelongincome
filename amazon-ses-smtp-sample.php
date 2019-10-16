@@ -11,12 +11,12 @@ require 'vendor/autoload.php';
 
 // Replace sender@example.com with your "From" address.
 // This address must be verified with Amazon SES.
-$sender = 'samuel.webhosting@gmail.com';
-$senderName = 'Samuel';
+$sender = 'brandon92@hotmail.sg';
+$senderName = 'brandon';
 
 // Replace recipient@example.com with a "To" address. If your account
 // is still in the sandbox, this address must be verified.
-$recipient = 'samuel.webhosting@gmail.com';
+$recipient = 'brandon92@hotmail.sg';
 
 // Replace smtp_username with your Amazon SES SMTP user name.
 $usernameSmtp = 'AKIA37MXBNKDPVSEOPVP';
@@ -26,7 +26,7 @@ $passwordSmtp = 'BGNv6T2XNlaBsurBgH43HUuGWb1niuZyxhDbr6ejPJLE';
 
 // Specify a configuration set. If you do not want to use a configuration
 // set, comment or remove the next line.
-$configurationSet = 'ConfigSet';
+//$configurationSet = 'ConfigSet';
 
 // If you're using Amazon SES in a region other than US West (Oregon),
 // replace email-smtp.us-west-2.amazonaws.com with the Amazon SES SMTP
@@ -60,7 +60,7 @@ try {
     $mail->Port       = $port;
     $mail->SMTPAuth   = true;
     $mail->SMTPSecure = 'tls';
-    $mail->addCustomHeader('X-SES-CONFIGURATION-SET', $configurationSet);
+//    $mail->addCustomHeader('X-SES-CONFIGURATION-SET', $configurationSet);
 
     // Specify the message recipients.
     $mail->addAddress($recipient);
